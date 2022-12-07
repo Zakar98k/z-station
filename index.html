@@ -8,6 +8,7 @@
         <link href="styles.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&family=Space+Mono&family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
         <title>Z-Station</title>
         <!--Meta tags for responsiveness across devices-->
         <meta charset="UTF-8">
@@ -15,63 +16,125 @@
     </head>
     <body class="page-backgroud-boxes">
       <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-light py-3 align-items-center" style="background-color: #ffd500;">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Z-Station</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="about.html">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="music.html">Music</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="anime.html">Anime</a>
-                </li>
-              </ul>
-            </div>
+      <nav class="user-select-none navbar navbar-expand-md navbar-light" style="background-color: #ffd500;">
+        <div class="container-fluid my-2">
+          <a class="navbar-brand " href="index.html">
+            ඞ Z-Station
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="music.html">Music</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="anime.html">Anime</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-        <!-- Center Page -->
-        <section class="text-light page-background-boxes">
-          <div class="container">
-            <div class="d-flex text-center justify-content-between fs-3">
-              <div class="align-items-center">
-                <h1 class ="pt-5 gradient-text fs-3">A Creative corner housing media of all kinds</h1>
-                <p class="text-secondary lead p-4">
-                  A cultured weeb's recommendations of everything from <span class="gradient-text">music</span>, to <span class="gradient-text">Anime</span>.
+        </div>
+      </nav>
+      <!-- Center Page -->
+      <section class="text-light page-background-boxes">
+        <div class="container">
+          <div class="row align-items-center text-center">
+            <div class="col-md-6 justify-content-between fs-3">
+              <div class="mt-5 mb-3">
+                <h1 class ="user-select-none gradient-text fs-2">A creative center</h1>
+                <p class="lead pt-4 fs-4">
+                  An avid media enthusiast's recommendations of everything: from <span class="text-yellow">music</span>, to <span class="text-yellow">Anime</span>.
                   Ready to get inspired? Check out the cards below
                 </p>
-              </div>
-                <img class="img-fluid align-center w-50 d-none d-md-block mt-sm-5 pt-sm-5" src="images/anime-fingerguns.png" alt="girl fingerguns">
-            </div>
-          </div>
-        </section>
-        <!-- Recommendations section -->
-        <section class="text-dark p-5" style="background-color: #ffd500;">
-          <div class="container">
-            <div class="row text-center">
-              <div class="col-md">
-                <card class="card-body">
-                  lorem ipsum deez nuts baba boey what the dog doin
-                </card>
-              </div>
-              <div class="col-md">
-                <card class="card-body">
-                  lorem ipsum deez nuts baba boey what the dog doin
-                </card>
-              </div>
-              <div class="col-md">
-                <card class="card-body">
-                  lorem ipsum deez nuts baba boey what the dog doin
-                </card>
+                <a class="btn btn-outline-secondary btn-sm mb-3" href="#recommendations">
+                  <i class="bi bi-caret-down"></i>
+                </a>
               </div>
             </div>
+          <div class="col-md-6 align-self-end mt-4 overflow-hidden">
+            <img id="fingerguns-img"class="img-fluid d-none d-md-block" src="images/anime-fingerguns.png" alt="girl fingerguns">
           </div>
-        </section>
-      </body>
-    </html>
+        </div>
+      </div>
+    </section>
+    <!-- Recommendations section/Cards -->
+    <section id="recommendations" class="user-select-none text-dark" style="background-color: #ffd500;">
+      <div class="container py-5">
+        <div class="row text-center gap-3">
+          <!-- First card -->
+          <div class="col-md">
+            <div class="card text-secondary">
+              <div class="mt-3 h1 gradient-text">
+                <i class="bi bi-star-fill"></i>
+                <h4 class="mt-3 card-title">
+                  Anime
+                </h4>
+              </div>
+              <div class="card-body fs-6">
+                <p>
+                  In my many years of watching anime, I have compiled the Top 15 Anime for you
+                  to check out whenever you want something nice to watch
+                </p>
+                <a href="anime.html" class="btn btn-outline-secondary">
+                  Explore top picks!
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Second card -->
+          <div class="col-md">
+            <div class="card text-light" style="background-color: #001524;">
+              <div class="mt-3 h1 gradient-text">
+                <i class="bi bi-music-note-beamed"></i>
+                <h4 class="mt-3 card-title">
+                  music
+                </h4>
+              </div>
+              <div class="card-body fs-6">
+                <p>
+                  Explore the best tracks from across Rock and Metal genres; if you like rocking out, our catalogue will not fail to
+                  cater to your various moods and genres.
+                </p>
+                <a id="btn-music" href="music.html" class="btn btn-outline-warning">
+                  Start vibing!
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Third card -->
+          <div class="col-md">
+            <div class="card text-secondary">
+              <div class="mt-3 h1 gradient-text">
+                <i class="bi bi-person-workspace"></i>
+                <h4 class="mt-3 card-title">
+                  About Me
+                </h4>
+              </div>
+              <div class="card-body fs-6">
+                <p>
+                  Learn more about my hobbies, and all my interests. All my socials can also be found here.
+                  I see myself as average, so there's not bound to be much
+                </p>
+                <a href="anime.html" class="btn btn-outline-secondary">
+                  Explore top picks!
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section id="footer" class="page-background-boxes">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-5">
+
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>
