@@ -8,10 +8,25 @@
     color: #ffd500;
 }
 
+.bg-yellow {
+    background-color: #ffd500;
+}
+
+
+#fingerguns-img {
+    margin: auto;
+    display: block;
+    width: 90%
+}
+
+#coffee-img {
+    margin: auto;
+    display:
+}
 
 .gradient-text{
     background-color: red;
-    background-image: linear-gradient(45deg, #ffd500, #00509d);
+    background-image: linear-gradient(45deg, #ffd500, #e63946);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -25,11 +40,14 @@ h1 {
     font-family: "Press Start 2P";
 }
 
+h4 {
+    font-family: "Press Start 2P";
+}
+
 #main-navbar {
     background-color: #FE9A20
 }
 
 p {
     font-family: "Ubuntu";
-    color: #FEFEE3;
 }
