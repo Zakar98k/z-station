@@ -21,12 +21,24 @@
 
 #coffee-img {
     margin: auto;
-    display:
+    display: auto;
 }
 
-.gradient-text{
-    background-color: red;
+.gradient-text-yellow {
+    background-color: yellow;
     background-image: linear-gradient(45deg, #ffd500, #e63946);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.gradient-text-blue {
+    background-color: blue;
+    background-image: linear-gradient(45deg, #1C3144, #2CACC9);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
