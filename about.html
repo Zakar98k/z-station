@@ -1,43 +1,161 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <!--Linking Bootstrap, Javascript and my CSS stylesheet-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&family=Space+Mono&family=Ubuntu&display=swap" rel="stylesheet">
-        <title>Z-Station</title>
-        <!--Meta tags for responsiveness across devices-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body class="">
-      <!-- Navbar -->
-      <nav class="user-select-none navbar navbar-expand-md navbar-light" style="background-color: #ffd500;">
-        <div class="container-fluid my-2">
-          <a class="navbar-brand " href="index.html">
-            ඞ Z-Station
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="music.html">Music</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="anime.html">Anime</a>
-              </li>
-            </ul>
+  <head>
+    <!--Linking Bootstrap, Javascript and my CSS stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&family=Space+Mono&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Z-Station</title>
+    <!--Meta tags for responsiveness across devices-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body class="">
+    <!-- Navbar -->
+    <nav class="shadow-lg user-select-none navbar navbar-expand-md navbar-light" style="background-color: #ffd500;">
+      <div class="container-fluid my-2">
+        <a class="fs-5 navbar-brand " href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-usb-plug-fill align-items-top" viewBox="0 0 16 16">
+            <path d="M6 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4H6v-4ZM7 1v1h1V1H7Zm2 0v1h1V1H9ZM5.5 5a.5.5 0 0 0-.5.5v4.894a2 2 0 0 0 .336 1.11l.83 1.245c.544.816.834 1.774.834 2.754 0 .275.222.497.497.497h2.006a.497.497 0 0 0 .497-.497c0-.98.29-1.938.834-2.754l.83-1.245a2 2 0 0 0 .336-1.11V5.5a.5.5 0 0 0-.5-.5h-6Z"/>
+          </svg>
+          Z-Station
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="music.html">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="anime.html">Anime</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- About me section -->
+    <div class="py-5 page-background-boxes user-select-none">
+      <div class="container-lg">
+        <div class="row p-5 align-items-center justify-content-center g-4">
+          <div class="text-center col-xl-4 col-lg-4 col-md-4 col-sm-7">
+            <h1 class="d-md-none d-block my-3 gradient-text-yellow">About Me</h1>
+            <h3 class="text-secondary h5 pb-4 d-md-none d-block my-3">
+              print("Hello World!")
+            </h3>
+            <img id="about-me-img" class="align-self-top img-fluid" src="images/About_Me.png" alt="">
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10">
+            <h1 class="d-none d-md-block my-3 gradient-text-yellow">Hey! I'm Zach</h1>
+            <h3 class="h4 d-none d-md-block text-secondary">
+              print("Hello World!")
+            </h3>
+            <p class="pt-3 text-light lead">
+              I'm a senior-high student wanting to get into the world of programming.
+            </p>
+            <p class="text-light lead">Some things I love doing are <span class="text-yellow">programming</span>,
+              and drawing <span class="text-yellow">pixel-art</span> for video-game sprites
+            </p>
           </div>
         </div>
-      </nav>
-      <section class="about-page-background">
-
-      </section>
+      </div>
+    </div>
+    <div class="py-5 bg-yellow">
+      <div class="container-lg text-center mb-5 user-select-none">
+        <h1 class="text-dark">What I've done</h1>
+        <p class="lead text-dark my-4">
+          New and old pixel-art that I've illustrated over the past year
+        </p>
+      </div>
+      <div class="container user-select-none">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-3">
+          <div class="col">
+            <div class="h-100 card shadow-sm">
+              <img src="images/1-bit practice.png" class="img-thumbnail card-img-top" alt="card image">
+              <div class="card-body">
+                <h5 class="card-title gradient-text-blue">
+                  1-bit practice
+                </h5>
+                <p class="card-text">
+                  drawing using only 2 colors is fun!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100 card shadow-sm">
+              <img src="images/edgerunners.png" class="img-thumbnail card-img-top" alt="card image">
+              <div class="card-body">
+                <h5 class="card-title gradient-text-blue">
+                  32x32 portraits
+                </h5>
+                <p class="card-text">
+                  this canvas size really makes room for all the cool facial features
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100 card shadow-sm">
+              <img src="images/idle animation scaled.gif" class="img-thumbnail card-img-top" alt="card image">
+              <div class="card-body">
+                <h5 class="card-title gradient-text-blue">
+                  Idle animation GIF
+                </h5>
+                <p class="card-text">
+                  An idle animation for a fighting game I wanted to make but never got to finish
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100 card shadow-sm">
+              <img src="images/vending-machine.gif" class="img-thumbnail card-img-top" alt="card image">
+              <div class="card-body">
+                <h5 class="card-title gradient-text-blue">
+                  Trouble with vending machines GIF
+                </h5>
+                <p class="card-text">
+                  Another "animation", though the only things that are animated here are the text and the facial expressions
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100 card shadow-sm">
+              <img src="images/samurai-dog.png" class="img-thumbnail card-img-top" alt="card image">
+              <div class="card-body">
+                <h5 class="card-title gradient-text-blue">
+                  Samurai dog
+                </h5>
+                <p class="card-text">
+                  Drew this for my cousin's birthday. He likes samurais and dogs
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100 card shadow-sm">
+              <img src="images/python-devs-irl.png" class="img-thumbnail card-img-top" alt="card image">
+              <div class="card-body">
+                <h5 class="card-title gradient-text-blue">
+                  Python devs IRL
+                </h5>
+                <p class="card-text">
+                  I felt like I wanted to draw something memey during that day, so I did
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
