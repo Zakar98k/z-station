@@ -1,8 +1,20 @@
 
+* {
+    font-family: "Ubuntu";
+}
+
 .content-wrapper {
   display: grid;
   min-height: 50vh;
   align-items: center;
+}
+
+div.card div.card-body, div.cards-aligned {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .page-background-boxes {
@@ -21,17 +33,27 @@
 #fingerguns-img {
     margin: auto;
     display: block;
-    width: 90%
+    width: 90%;
+    object-position: 0 0;
+    background-color: transparent;
 }
 
-#coffee-img {
-    margin: auto;
-    display: auto;
-}
-
-.img-thumbnail {
+img.img-fit-crop {
     object-fit: cover;
     object-position: 0 0;
+    transition: transform 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.08s;
+    image-rendering: pixelated;
+}
+
+img.img-fit-crop:hover {
+    object-fit: cover;
+    object-position: 0 0;
+    transform: scale(1.1);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    image-rendering: pixelated;
 }
 
 .gradient-text-yellow {
@@ -67,16 +89,29 @@ h3 {
     letter-spacing: 1px;
 }
 
-h4 {
-    font-family: "Press Start 2P";
-}
-
-#main-navbar {
+nav {
     background-color: #FE9A20;
     font-family: "Ubuntu";
 }
 
 p {
     font-family: "Ubuntu";
+    border-left: 1px;
+    border-left-color: #6c757d;
+    border-left-style: solid;
+    border-width: thin;
+    padding-inline: 10px;
+}
 
+p.letter-big::first-letter {
+    font-family: "Press Start 2P";
+    background-color: blue;
+    background-image: linear-gradient(45deg, #1C3144, #2CACC9);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
