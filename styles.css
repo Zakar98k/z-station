@@ -1,11 +1,11 @@
 
 * {
-    font-family: "Ubuntu";
+    font-family: "Ubuntu", Verdana, sans-serif;
 }
 
 .content-wrapper {
   display: grid;
-  min-height: 50vh;
+  min-height: 60vh;
   align-items: center;
 }
 
@@ -13,7 +13,7 @@ div.card div.card-body, div.cards-aligned {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: nowrap;
 }
 
@@ -33,27 +33,56 @@ div.card div.card-body, div.cards-aligned {
 #fingerguns-img {
     margin: auto;
     display: block;
-    width: 90%;
+    width: 100%;
+    height: auto;
+    object-position: 0 0;
+    background-color: transparent;
+}
+
+#about-me-img {
+    display: block;
+    width: 100%;
+    height: auto;
     object-position: 0 0;
     background-color: transparent;
 }
 
 img.img-fit-crop {
+    width: 100% !important;
+    height: auto !important;
     object-fit: cover;
     object-position: 0 0;
     transition: transform 0.3s;
     transition-timing-function: ease-out;
     transition-delay: 0.08s;
-    image-rendering: pixelated;
+    border-radius: 2px;
 }
 
 img.img-fit-crop:hover {
+    width: 100% !important;
+    height: auto !important;
     object-fit: cover;
     object-position: 0 0;
     transform: scale(1.1);
-    border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    image-rendering: pixelated;
+    border-radius: 2px;
+}
+
+video {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 2px;
+    transition: transform 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.08s;
+}
+
+video:hover {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 2px;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .gradient-text-yellow {
@@ -81,21 +110,21 @@ img.img-fit-crop:hover {
 }
 
 h1 {
-    font-family: "Press Start 2P";
+    font-family: "Press Start 2P", Georgia;
 }
 
-h3 {
-    font-family: "Space Mono";
+h2 {
+    font-family: "Space Mono", Georgia;
     letter-spacing: 1px;
 }
 
 nav {
     background-color: #FE9A20;
-    font-family: "Ubuntu";
+    font-family: "Ubuntu", Verdana;
 }
 
 p {
-    font-family: "Ubuntu";
+    font-family: "Ubuntu", Verdana;
     border-left: 1px;
     border-left-color: #6c757d;
     border-left-style: solid;
@@ -104,7 +133,7 @@ p {
 }
 
 p.letter-big::first-letter {
-    font-family: "Press Start 2P";
+    font-family: "Press Start 2P", Georgia;
     background-color: blue;
     background-image: linear-gradient(45deg, #1C3144, #2CACC9);
     background-size: 100%;

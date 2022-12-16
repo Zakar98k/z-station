@@ -3,21 +3,19 @@
 <html lang="en">
   <head>
     <!--Linking Bootstrap, Javascript and my CSS stylesheet-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <link href="styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&family=Space+Mono&family=Ubuntu&display=swap" rel="stylesheet">
+    <link media="screen" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer src="mail.js"></script>
+    <link media ="screen" href="styles.css" rel="stylesheet">
+    <link media="screen" rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link media="screen" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <title>Z-Station</title>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init('jbhc97ggVd6og6AcR');
-        }())
-    </script>
-    <!--Meta tags for responsiveness across devices-->
+    <!--Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A creative platform housing curated lists of the top Metal/Rock tracks, and Anime. Click now to get plugged in!">
+    <meta name="keywords" content="Anime, Metal, Rock, Pixel-Art, Recommendations">
+    <meta name="author" content="Zach Quita">
   </head>
   <body class="">
     <!-- Navbar -->
@@ -56,42 +54,44 @@
           <div class="row p-5 align-items-center justify-content-center g-4">
             <div class="text-center col-xl-4 col-lg-4 col-md-4 col-sm-7">
               <h1 class="d-md-none d-block my-3 gradient-text-yellow">About Me</h1>
-              <h3 class="text-secondary h5 pb-4 d-md-none d-block my-3">
+              <h2 class="text-secondary fs-4 pb-4 d-md-none d-block my-3">
                 print("Hello World!")
-              </h3>
-              <img id="about-me-img" class="align-self-top img-fluid" src="images/About_Me.png" alt="">
+              </h2>
+              <img width="300" height="300" id="about-me-img" class="align-self-top img-fluid" src="images/About_Me.webp" alt="image of zach quita">
             </div>
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10">
               <h1 class="d-none d-md-block my-3 gradient-text-yellow">Hey! I'm Zach</h1>
-              <h3 class="h4 d-none d-md-block text-secondary">
+              <h2 class="fs-4 d-none d-md-block text-secondary">
                 print("Hello World!")
-              </h3>
-              <p class="mt-3 text-light lead">
-                I'm a senior-high student wanting to get into the world of programming.
-              </p>
-              <p class="text-light lead">Some things I love doing are <span class="text-yellow">programming</span>,
-                and drawing <span class="text-yellow">pixel-art</span> for video-game sprites
-              </p>
+              </h2>
+              <div class="fs-5">
+                <p class="mt-3 text-light">
+                  I'm a senior-high student wanting to get into the world of programming.
+                </p>
+                <p class="text-light">Some things I love doing are <span class="text-yellow">programming</span>,
+                  and drawing <span class="text-yellow">pixel-art</span> for video-game sprites
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="py-5 bg-yellow">
-        <div class="container-lg text-center mb-5 user-select-none">
-          <h1 class="text-dark">What I've done</h1>
-          <h3 class="h4 lead text-dark my-4">
+      <div class="pt-5 bg-yellow">
+        <div class="container-lg text-center user-select-none">
+          <h1 class="pt-4 text-dark">What I've done</h1>
+          <h2 class="h4 lead text-dark my-4">
             New and old pixel-art that I've illustrated over the past year
-          </h>
+          </h2>
         </div>
         <div class="container user-select-none">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-3">
             <div class="col">
               <div class="h-100 card shadow-sm">
-                <img src="images/1-bit practice.png" class="img-fit-crop card-img-top" alt="card image">
+                <img src="images/1-bit practice.webp" class="img-fit-crop card-img-top" alt="card image">
                 <div class="card-body">
-                  <h5 class="card-title gradient-text-blue">
+                  <h3 class="fs-5 card-title gradient-text-blue">
                     1-bit practice
-                  </h5>
+                  </h3>
                   <p class="card-text">
                     Drawing with 2 colors makes you think of blocking out shapes differently
                   </p>
@@ -100,11 +100,11 @@
             </div>
             <div class="col">
               <div class="h-100 card shadow-sm">
-                <img src="images/edgerunners.png" class="img-fit-crop card-img-top" alt="card image">
+                <img src="images/edgerunners.webp" class="img-fit-crop card-img-top" alt="card image">
                 <div class="card-body">
-                  <h5 class="card-title gradient-text-blue">
+                  <h3 class="fs-5 card-title gradient-text-blue">
                     32x32 portraits
-                  </h5>
+                  </h3>
                   <p class="card-text">
                     this canvas size really makes room for all the cool facial features
                   </p>
@@ -113,11 +113,13 @@
             </div>
             <div class="col">
               <div class="h-100 card shadow-sm">
-                <img src="images/idle animation scaled.gif" class="img-fit-crop card-img-top" alt="card image">
+                <video width="auto" height="auto" autoplay loop muted>
+                  <source src="images/idle animation scaled.webm">
+                </video>
                 <div class="card-body">
-                  <h5 class="card-title gradient-text-blue">
+                  <h3 class="fs-5 card-title gradient-text-blue">
                     Idle animation GIF
-                  </h5>
+                  </h3>
                   <p class="card-text">
                     An idle animation for a fighting game I wanted to make but never got to finish
                   </p>
@@ -126,11 +128,15 @@
             </div>
             <div class="col">
               <div class="h-100 card shadow-sm">
-                <img src="images/vending-machine.gif" class="img-fit-crop card-img-top" alt="card image">
+                <div class="card-img-top">
+                  <video autoplay loop muted>
+                    <source src="images/vending-machine.webm">
+                  </video>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title gradient-text-blue">
+                  <h3 class="fs-5 card-title gradient-text-blue">
                     Trouble with vending machines GIF
-                  </h5>
+                  </h3>
                   <p class="card-text">
                     Another "animation", though the only things that are animated here are the text and the facial expressions
                   </p>
@@ -139,11 +145,11 @@
             </div>
             <div class="col">
               <div class="h-100 card shadow-sm">
-                <img src="images/samurai-dog.png" class="img-fit-crop card-img-top" alt="card image">
+                <img src="images/samurai-dog.webp" class="img-fit-crop card-img-top" alt="card image">
                 <div class="card-body">
-                  <h5 class="card-title gradient-text-blue">
+                  <h3 class="fs-5 card-title gradient-text-blue">
                     Samurai dog
-                  </h5>
+                  </h3>
                   <p class="card-text">
                     Drew this for my cousin's birthday. He likes samurais and dogs
                   </p>
@@ -152,11 +158,11 @@
             </div>
             <div class="col">
               <div class="h-100 card shadow-sm">
-                <img src="images/python-devs-irl.png" class="img-fit-crop card-img-top" alt="card image">
+                <img src="images/python-devs-irl.webp" class="img-fit-crop card-img-top" alt="card image">
                 <div class="card-body">
-                  <h5 class="card-title gradient-text-blue">
+                  <h3 class="fs-5 card-title gradient-text-blue">
                     Python devs IRL
-                  </h5>
+                  </h3>
                   <p class="card-text">
                     I felt like I wanted to draw something memey during that day, so I did
                   </p>
@@ -166,15 +172,17 @@
           </div>
         </div>
         <div class="container mt-5">
-          <h1 class="text-center">
+          <h1 class="mt-4 text-center">
             Send me a message
           </h1>
-          <form id="contact-form" class="my-5">
+          <form id="contact-form" class="pb-5">
             <input type="hidden" name="contact_number">
             <div class="mb-3 row">
               <label for="" class="col-form-label col-sm-2">To:</label>
               <div class="col-sm-10">
-                <input class="form-control-plaintext" id="contact-form-to" readonly type="text" name="to_reciever" value="zachquita@gmail.com">
+                <label>
+                    zachquita@gmail.com
+                </label>
               </div>
             </div>
             <div class="mb-3 row">
@@ -204,11 +212,11 @@
             <div class="mb-3 row">
               <label for="" class="col-form-label col-sm-2"></label>
               <div class="col-sm-10">
+                <!-- Dismissible alert will pop up after submitting form -->
                 <div id="form-alert"></div>
               </div>
             </div>
           </form>
-          <!-- Dismissible alert will pop up after submitting form -->
         </div>
       </div>
     </main>
@@ -250,42 +258,5 @@
         </footer>
       </div>
     </div>
-    <script type="text/javascript">
-        window.onload = function() {
-            const formAlert = document.getElementById('form-alert')
-
-            // Alert function tp construct dismissible alert
-            const alertMessage = (message, type) => {
-                const wrapper = document.createElement('div')
-                wrapper.innerHTML = [
-                    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-                    `   <div>${message}</div>`,
-                    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-                    '</div>'
-                ].join('')
-
-                formAlert.append(wrapper)
-            }
-
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                        document.getElementById("contact-form").reset()
-                        alertMessage('Message sent successfully', 'success')
-                        // TODO: Add alert if message sent successfully
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                        document.getElementById("contact-form").reset()
-                        alertMessage('Something went wrong. Please try again', 'danger')
-                        // TODO: Add alert if message sent successfully
-                    });
-            });
-        }
-    </script>
   </body>
 </html>
