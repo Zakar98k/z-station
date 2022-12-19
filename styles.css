@@ -39,6 +39,20 @@ div.card div.card-body, div.cards-aligned {
     background-color: transparent;
 }
 
+.gradient-carousel {
+    position: relative;
+    display: inline-block;
+}
+.gradient-carousel:after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    display: inline-block;
+    background: linear-gradient(to top, rgba(0,0,0,.90) 5%, rgba(0,0,0,0) 100%); /* W3C */
+
+}
+
 #about-me-img {
     display: block;
     width: 100%;
