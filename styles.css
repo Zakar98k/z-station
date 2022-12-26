@@ -1,12 +1,47 @@
 
 * {
-    font-family: "Ubuntu", Verdana, sans-serif;
+    font-family: "Source Sans Pro", Verdana, sans-serif;
 }
 
 .content-wrapper {
   display: grid;
   min-height: 60vh;
   align-items: center;
+}
+
+.music-player {
+    height: 70%;
+    padding-top: 30px; padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.music-details {
+    display: flex;
+    padding-top: 25px; padding-bottom: 25px;
+    align-items: center; justify-content: center;
+    border-radius: 10px;
+    background-color: #ffd500;
+    margin-top: 25px;
+}
+
+.playpause-track,
+.prev-track,
+.next-track {
+    padding: 20px;
+    opacity: 0.8;
+}
+
+div.music-details div.track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: url("images/music/killswitch-engage.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
 }
 
 div.card div.card-body, div.cards-aligned {
@@ -26,7 +61,7 @@ div.card div.card-body, div.cards-aligned {
     color: #ffd500;
 }
 
-.bg-yellow {
+.bg-yellow{
     background-color: #ffd500;
 }
 
@@ -59,6 +94,10 @@ div.card div.card-body, div.cards-aligned {
     height: auto;
     object-position: 0 0;
     background-color: transparent;
+}
+
+.card {
+    overflow: hidden;
 }
 
 img.img-fit-crop {
@@ -128,12 +167,12 @@ h1 {
 }
 
 h2 {
-    font-family: "Space Mono", Georgia;
+    font-family: "Source Sans Pro", Georgia;
     letter-spacing: 1px;
 }
 
 p {
-    font-family: "Ubuntu", Verdana;
+    font-family: "Source Sans Pro", Verdana;
     border-left: 1px;
     border-left-color: #6c757d;
     border-left-style: solid;
