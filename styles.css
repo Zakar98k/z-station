@@ -1,6 +1,6 @@
 
 * {
-    font-family: "Source Sans Pro", Verdana, sans-serif;
+    font-family: "Ubuntu", Verdana, sans-serif;
 }
 
 .content-wrapper {
@@ -8,6 +8,8 @@
   min-height: 60vh;
   align-items: center;
 }
+
+.track-name { word-wrap: break-word; }
 
 .music-player {
     height: 70%;
@@ -30,15 +32,96 @@
 .playpause-track,
 .prev-track,
 .next-track {
-    padding: 20px;
+    padding: 25px;
     opacity: 0.8;
+    transition: opacity 0.2s;
+    color: black;
+}
+
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+    opacity: 1.0;
+}
+
+.slider-container {
+    width: 85%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seek_slider,
+.volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: black;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.seek_slider::-moz-range-thumb,
+.volume_slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: black;
+    cursor: pointer;
+    border-radius: 80%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1.0;
+}
+
+.seek_slider {
+  width: 60%;
+  border-radius: 2px;
+}
+
+.volume_slider {
+  width: 30%;
+  border-radius: 2px;
+}
+
+.current-time,
+.total-duration {
+    padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+}
+
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
 }
 
 div.music-details div.track-art {
     margin: 25px;
     height: 250px;
     width: 250px;
-    background-image: url("images/music/killswitch-engage.png");
+    background-image: url("");
     background-size: cover;
     background-position: center;
     border-radius: 10%;
@@ -166,13 +249,12 @@ h1 {
     font-family: "Press Start 2P", Georgia;
 }
 
-h2 {
-    font-family: "Source Sans Pro", Georgia;
-    letter-spacing: 1px;
+.about-hello-world {
+    font-family: "Ubuntu Mono", Georgia;
 }
 
 p {
-    font-family: "Source Sans Pro", Verdana;
+    font-family: "Ubuntu", Verdana;
     border-left: 1px;
     border-left-color: #6c757d;
     border-left-style: solid;
